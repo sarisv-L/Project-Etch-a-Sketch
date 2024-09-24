@@ -1,15 +1,33 @@
-.content {
-  flex-shrink: 0;
-  width: 25px;
-  height: 25px;
-
-  /* flex-wrap: wrap; */
-
-  background-color: blue;
-}
-
 #container {
   display: flex;
   flex-wrap: wrap;
-  gap: 1px;
+  width: 960px;
+  height: 960px;
+  border: 2px solid;
+  margin-top: 50px;
+}
+
+.content {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+  transition: background-color 0.3s;
+}
+
+.content:hover {
+  background-color: #e0e0e0;
+}
+
+#btn {
+  width: 150px;
+  height: 50px;
+  background-color: rgb(62, 181, 131);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
