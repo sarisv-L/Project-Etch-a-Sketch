@@ -1,29 +1,31 @@
 #container {
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
-  width: 960px;
-  height: 960px;
-  border: 2px solid;
+  width: 640px;
+  height: 640px;
+  border: solid 2px black;
   margin-top: 50px;
+  gap: 0px;
 }
 
 .content {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  border: 1px solid #ccc;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: blue;
+  background-color: rgb(215, 215, 215);
   transition: background-color 0.3s;
 }
 
-.content:hover {
-  background-color: #e0e0e0;
+.hovered {
+  /* background-color: rgb(25, 25, 25);  */
+
+  background-color: rgb(30, 30, 30);
 }
 
-#btn {
+#btn,
+#reset,
+#randomColor {
   width: 150px;
   height: 50px;
   background-color: rgb(62, 181, 131);
